@@ -16,7 +16,7 @@
 			<p class="help-block">Check box to change the location of where the torrent is downloaded. The default is the download directory set by rtorrent.</p>
 		</div>
 		<div class="form-group" ng-if="torrentsAddCtrl.changeTorrentLocation" ng-class="{'has-error': addTorrent.torrentPath.$invalid && addTorrent.torrentPath.$touched}">
-			<label for="torrentPath" class="control-label">Save Directory (/absolute/path/to/folder:</label>
+			<label for="torrentPath" class="control-label">Save Directory (/absolute/path/to/folder)</label>
 			<input type="text" id="torrentPath" name="torrentPath" class="form-control" placeholder="Path to download torrent" ng-model="torrentsAddCtrl.torrent.path" required>
 			<div class="help-block" ng-show="addTorrent.torrentPath.$invalid && addTorrent.torrentPath.$touched">
 				<p ng-show="addTorrent.torrentPath.$error.required"><strong>Error:</strong> A path is required if you check <i>Change torrent download location</i>!</p>
